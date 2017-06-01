@@ -26,7 +26,13 @@ require_once 'config.php';
 // echo $aluno;
 
 // Atualizando um usuário
+// $usuario = new Usuario();
+// $usuario->loadById(8);
+// $usuario->update("professor", "girafales");
+// echo $usuario;
+
+// Excluindo um usuário
 $usuario = new Usuario();
 $usuario->loadById(8);
-$usuario->update("professor", "girafales");
+$usuario->delete();
 echo $usuario;
